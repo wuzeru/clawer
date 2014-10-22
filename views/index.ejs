@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css"/>
+    <script src="/javascripts/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <% results.forEach(function(news){%>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="/news/<%=news.href%>"><%= news.title%></a>
+                    </div>
+                </div>
+                <%})%>
+            </div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+    </div>
+  </body>
+</html>
